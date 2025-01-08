@@ -1,0 +1,18 @@
+- redux plan
+    + look at template
+    + copy basic structure from redux
+    + add linter and packages
+    + remove everything, copy after. step by step
+    + make basic api slice separate, place in redux
+    + api endpoints to all features
+    + remove quotes, don't need it anymore
+    - create table with checkboxes first, remove and edit later
+    - try to separate test files
+    - don't need axios, cypress?
+    - start testing, look how it goes
+
+- flat everything and make from scratch, don't use selectors
+- after creating all in one file, make separate components
+- try to use context, after that look at composition, if it's good, leave it
+- look at mui data table, how it's implemented, think of optimization
+- calling selectors with parameters
