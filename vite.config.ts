@@ -44,11 +44,5 @@ export default defineConfig(({ mode }) => {
         { source: '/(.*)', destination: '/' },
       ],
     },
-    test: {
-      globals: true,
-      environment: 'jsdom',
-      setupFiles: 'src/setupTests',
-      mockReset: true,
-    },
   }
 })

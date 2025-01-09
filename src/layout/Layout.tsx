@@ -24,7 +24,7 @@ const drawerWidth = 240
 const navItems = [
   {
     title: 'GITHUB',
-    href: 'https://github.com/JohnKucharsky/react-effector-mui',
+    href: 'https://github.com/JohnKucharsky/react-redux-mui',
   },
   { title: 'TELEGRAM', href: 'https://t.me/johnkucharsky' },
   { title: 'HH.RU', href: 'https://hh.ru' },

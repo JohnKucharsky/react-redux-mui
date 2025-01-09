@@ -7,7 +7,6 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest run",
     "lint": "tsc --noEmit --incremental && eslint . --fix",
     "interface": "i18next-resources-for-ts interface -i src/i18n/en -o ./src/@types/resources.d.ts",
     "test:open": "npx cypress open",
