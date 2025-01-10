@@ -1,27 +1,74 @@
-# vite-template-redux
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+# React Redux MUI
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
-```
+This is a frontend project built for [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
-## Goals
+## Features
+- **Redux** for state management
+- **Type-safe** with Zod
+- **MUI** for UI components, including dark mode and a color picker
+- **React Router** for navigation
+- **Formik** for form validation
+- **Type-safe internationalization** with i18next
+- **Advanced linting and formatting** using ESLint and Prettier
+- **End-to-end testing** with Cypress
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+## Libraries and Frameworks
 
-## Scripts
+| **Name**                                      | **Version** | **Description**       |  
+|-----------------------------------------------|-------------|-----------------------|  
+| [TypeScript](https://www.typescriptlang.org/) | 5.7.x       | Type-safe JavaScript  |  
+| [React](https://react.dev/)                   | 19.x        | UI framework          |  
+| [Vite](https://vite.dev/)                     | 6.x         | Build tool            |  
+| [React Router](https://reactrouter.com/)      | 7.x         | Navigation library    |  
+| [Redux](https://redux.js.org/)                | 9.x         | State manager         |  
+| [MUI](https://mui.com/)                       | 6.x         | UI components         |  
+| [Zod](https://zod.dev/)                       | 3.x         | Schema validation     |  
+| [Formik](https://formik.org/)                 | 2.x         | Form state management |  
+| [Cypress](https://www.cypress.io/)            | 13.x        | End-to-end testing    |  
+| [i18next](https://www.i18next.com/)           | 24.x        | Internationalization  |  
 
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
+## Getting Started
 
-## Inspiration
+A demo of the app is live at: [https://react-redux-mui.vercel.app/](https://react-redux-mui.vercel.app/).
 
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+### Development
+
+1. Copy the environment file:
+   ```bash  
+   cp .env.example .env.local
+   ``` 
+
+2. Install dependencies:
+    ```bash  
+   yarn
+   ``` 
+
+3. Run dev:
+   ```bash  
+   yarn dev
+   ``` 
+
+### Production
+
+1. Build the application:
+   ```bash  
+   yarn build
+   ``` 
+
+2. Preview the build:
+    ```bash  
+   yarn preview
+   ``` 
+
+### Testing
+
+1. Run tests in the browser:
+   ```bash  
+   yarn test:open
+   ``` 
+
+2. Run tests in the terminal:
+    ```bash  
+   yarn test:run
+   ``` 
