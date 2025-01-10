@@ -18,7 +18,7 @@ import CloseButton from '@/components/StyledComponents/CloseButton.tsx'
 import { useAddUserMutation } from '@/features/users/data/api.ts'
 import { userInputOutput } from '@/features/users/data/input-output'
 import { useYupSchemaUsers } from '@/features/users/data/service'
-import SameFields from '@/features/users/SameFields'
+import FormFields from '@/features/users/FormFields.tsx'
 import { addTestKey } from '@/utils/test-keys.ts'
 
 export default function Create() {
@@ -108,7 +108,7 @@ function CreateContent({ handleClose }: { handleClose: () => void }) {
                 }}
               >
                 <Box display={'grid'} gap={1}>
-                  <SameFields
+                  <FormFields
                     touched={touched}
                     errors={errors}
                     values={values}

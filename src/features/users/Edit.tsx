@@ -9,7 +9,7 @@ import { useEditUserMutation } from '@/features/users/data/api.ts'
 import { userInputOutput } from '@/features/users/data/input-output'
 import { useYupSchemaUsers } from '@/features/users/data/service'
 import { type User } from '@/features/users/data/types'
-import SameFields from '@/features/users/SameFields'
+import FormFields from '@/features/users/FormFields.tsx'
 
 export default function Edit({
   handleEditClose,
@@ -80,7 +80,7 @@ export default function Edit({
               }}
             >
               <Box display={'grid'} gap={1}>
-                <SameFields
+                <FormFields
                   touched={touched}
                   errors={errors}
                   values={values}
