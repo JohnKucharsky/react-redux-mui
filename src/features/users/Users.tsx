@@ -121,18 +121,20 @@ const TableView = () => {
                 <TableCell></TableCell>
               </TableRow>
             </TableHead>
-            {data?.length === 0 && !isLoading ? (
+            {!isLoading && data?.length === 0 ? (
               <TableEmptyText
                 colSpan={9}
                 title={t('couldNotFindSearchedUsers')}
               />
             ) : null}
 
-            {isLoading ? (
+            {isLoading && !data && (
               <TableBody>
                 <TableSkeletons cellsCount={9} skeletonRowsCount={10} />
               </TableBody>
-            ) : (
+            )}
+
+            {!isLoading && data?.length !== 0 && (
               <TableBody>
                 {orderBy(order.orderBy, order.order, data)?.map((user) => (
                   <TableRowEl
